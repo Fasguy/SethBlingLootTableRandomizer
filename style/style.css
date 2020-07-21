@@ -1,0 +1,135 @@
+h1, h3, h4, #inputs, p {
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active, p, #footer, #progress {
+    color: white;
+}
+
+p, #footer, #progress {
+    font-size: 16px;
+}
+
+h1, h4 {
+    font-weight: normal;
+    color: lightgray;
+}
+
+body {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    background-image: url("dirt_block_dark.png");
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background-size: 48px 48px;
+    font-family: 'Minecraft';
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#text {
+    white-space: pre-line;
+}
+
+#additional a {
+    display: block;
+}
+
+#footer {
+    position: fixed;
+}
+
+#version {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    text-align: right;
+    white-space: pre-line;
+}
+
+#additional {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+
+input {
+    font-family: 'Minecraft';
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    font-size: 16px;
+    -moz-appearance: textfield; /* Firefox */
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px none;
+}
+
+input[type="number"] {
+    width: 404px;
+    height: 44px;
+    background-image: url('textbox.png');
+    background-size: 404px 44px;
+}
+
+input[type="submit"] {
+    width: 120px;
+    height: 40px;
+    background-image: url('button.png');
+    background-size: 120px 40px;
+}
+
+input[type="submit"]:hover {
+    background-image: url('button_hover.png');
+    color: #ffffa0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display:none;}
+
+
+
+.toggle {
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    width: 360px;
+    height: 40px;
+    background-image: url('button_long.png');
+    background-size: 360px 40px;
+}
+
+.toggle:hover {
+    background-image: url('button_long_hover.png');
+    color: #ffffa0;
+}
+  
+.toggle input {display:none;}
+
+.state:after {content:'OFF';}
+  
+input:checked + .state:after {content:'ON';}
+
+#options {
+    max-width: 750px;
+    overflow-x:auto;
+    margin: 0 auto;
+}
